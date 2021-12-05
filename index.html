@@ -8,15 +8,74 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style> 
         body{
-            background-color: gray;
+            margin: 0px;
+            padding: 0px;
+        }
+        .content{
+            height: 520px;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .navigation{
+            position: absolute;
+            bottom: 20px;
+            left: 5px;
+            display: flex;
+        }
+        .bar{
+            width: 20px;
+            height: 20px;
+            border: 2px solid white;
+            margin: 6px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s;
+        }
+        .bar:hover{
+            background-color: white;
+        }
+        .slides input{
+            display:none;
+        }
+        .slides{
+            display: flex;
+            width: 500%;
+            height: 100%;
+        }
+        .slide{
+            width: 20%;
+            transition: .6s;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+        }
+        #slide1:checked ~ .s1{
+            margin-left: 0;
+        }
+        #slide2:checked ~ .s1{
+            margin-left: -20%;
+        }
+        #slide3:checked ~ .s1{
+            margin-left: -40%;
+        }
+        #slide4:checked ~ .s1{
+            margin-left: -60%;
+        }
+        #slide5:checked ~ .s1{
+            margin-left: -80%;
         }
         .menuPrincipal{
             background-color: #000000;
-            height: 50px;
+            height: 70px;
         }
         .opcaoMenu{
             color: white;
-            font-size: 25px;
+            font-size: 30px;
             text-align: center;
         }
         .opcaoMenu:hover{
@@ -26,8 +85,10 @@
         }
         .menuIcones{
             height: 100%;
+            margin-top: 500px;
         }
         .icones{
+
             width: 150px;
             height: 150px;
             border-radius: 0px;
@@ -35,7 +96,6 @@
             margin-bottom: 10px;
             margin-top: 30px;
         }
-        
     </style>
 </head>
 <body>
@@ -43,9 +103,53 @@
         <div class="row menuPrincipal">
             <div class="col-1 offset-1 opcaoMenu">Início</div>
             <div class="col-2 opcaoMenu">Curiosidades</div>
-            <div class="col-1 opcaoMenu">Quizes</div>
+            <div class="col-1 opcaoMenu">Quizzes</div>
+            <div class="col-4 offset-3">
+                <script async src="https://cse.google.com/cse.js?cx=ae3137e9846230ffa"></script>
+                <div class="gcse-search"></div>
+            </div>
         </div>
-        <br>
+        <br><br>
+        
+        <div class="content">
+            <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <input type="radio" name="slide" id="slide5">
+                
+                <div class="slide s1">
+                    <img src="imgs/img1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="imgs/img2.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="imgs/img3.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="imgs/img4.jpg" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="imgs/img5.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="navigation">
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+                <label class="bar" for="slide3"></label>
+                <label class="bar" for="slide4"></label>
+                <label class="bar" for="slide5"></label>
+            </div>
+        </div>
+        
+        <br><br>
         <div class="row menuIcones">
             <div class="icones offset-1 col-2">Gavião Arqueiro</div>
             <div class="icones offset-2 col-2">Capitão América</div>
