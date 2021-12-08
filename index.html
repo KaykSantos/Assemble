@@ -98,9 +98,9 @@
 <body>
     <div class="container-fluid">
         <div class="row menuPrincipal">
-            <div href="" class="col-2 offset-1 opcaoMenu">Início</div>
-            <div class="col-2 opcaoMenu">Curiosidades</div>
-            <div class="col-2 opcaoMenu">Quizzes</div>
+            <div class="col-2 offset-1 opcaoMenu teste" onclick="abrirInicio()">Início</div>
+            <div class="col-2 opcaoMenu teste" onclick="abrirCuriosidades()">Curiosidades</div>
+            <div class="col-2 opcaoMenu teste" onclick="abrirQuizzes()">Quizzes</div>
             <div class="col-4 offset-1">
                 <script async src="https://cse.google.com/cse.js?cx=ae3137e9846230ffa"></script>
                 <div class="gcse-search"></div>
@@ -117,23 +117,35 @@
                 <input type="radio" name="slide" id="slide5">
                 
                 <div class="slide s1">
-                    <img src="imgs/img1.jpg" alt="">
+                    <a href="index.html">
+                        <img src="imgs/img1.jpg" alt="">
+                    </a>    
                 </div>
 
                 <div class="slide">
-                    <img src="imgs/img2.jpg" alt="">
+                    <a href="Curiosidades.html">
+                        <img src="imgs/img2.jpg" alt="">
+                    </a>
+                        
                 </div>
 
                 <div class="slide">
-                    <img src="imgs/img3.jpg" alt="">
+                    <a href="Quizzes.html">
+                        <img src="imgs/img3.jpg" alt="">
+                    </a>
                 </div>
 
                 <div class="slide">
-                    <img src="imgs/img4.jpg" alt="">
+                    <a href="GirlPower.html">
+                        <img src="imgs/img4.jpg" alt="">
+                    </a>
                 </div>
                 
                 <div class="slide">
-                    <img src="imgs/img5.jpg" alt="">
+                    <a href="Viloes.html">
+                        <img src="imgs/img5.jpg" alt="">
+                    </a>
+                    
                 </div>
 
             </div>
@@ -155,18 +167,28 @@
                 <a href="Hulk.html" class="icones"><img src="imgsIcons/img4.jpg" alt=""></a>
                 <a href="ViuvaNegra.html" class="icones"><img src="imgsIcons/img5.jpg" alt=""></a>
                 <a href="HomemdeFerro.html" class="icones"><img src="imgsIcons/img6.jpg" alt=""></a>
-                <a href="" class="icones"><img src="imgsIcons/img7.jpg" alt=""></a>
-                <a href="" class="icones"><img src="imgsIcons/img8.jpg" alt=""></a>
-                <a href="" class="icones"><img src="imgsIcons/img9.jpg" alt=""></a>
-                <a href="" class="icones"><img src="imgsIcons/img10.jpg" alt=""></a>
-                <a href="" class="icones"><img src="imgsIcons/img11.jpg" alt=""></a>
-                <a href="" class="icones"><img src="imgsIcons/img12.jpg" alt=""></a>
+                <a href="Personagens.html" class="icones"><img src="imgsIcons/img7.jpg" alt=""></a>
+                <a href="Quizzes.html" class="icones"><img src="imgsIcons/img8.jpg" alt=""></a>
+                <a href="Filmes.html" class="icones"><img src="imgsIcons/img9.jpg" alt=""></a>
+                <a href="Viloes.html" class="icones"><img src="imgsIcons/img10.jpg" alt=""></a>
+                <a href="GirlPower.html" class="icones"><img src="imgsIcons/img11.jpg" alt=""></a>
+                <a href="QuemSomos.html" class="icones"><img src="imgsIcons/img12.jpg" alt=""></a>
             </center>
             
 
         </div>
     </div>
-
+<script>
+    function abrirInicio(){
+        window.open('index.html', '_self');
+    }
+    function abrirCuriosidades(){
+        window.open('Curiosidades.html', '_self');
+    }
+    function abrirQuizzes(){
+        window.open('Quizzes.html', '_self');
+    }
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
