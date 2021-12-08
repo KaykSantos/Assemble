@@ -20,6 +20,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            margin-top: 66px;
         }
         .navigation{
             position: absolute;
@@ -91,14 +92,28 @@
         }
         .icones{
             margin: 50px;
-        
+        }
+        #logo{
+            width: 65px;
+            height: 65px;
+            background-color: white;
+        }
+        #Tituloassemble{
+            color: white;
+            font-size: 40px;
+            margin-left: 15px;
+            font-family: fantasy;
         }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row menuPrincipal">
-            <div class="col-2 offset-1 opcaoMenu teste" onclick="abrirInicio()">Início</div>
+            <img id="logo" src="imgs/assemble.png" alt="">
+            <p id="Tituloassemble">Assemble</p>
+        </div>
+        <div class="row menuPrincipal">
+            <div class="col-2 opcaoMenu offset-1 teste" onclick="abrirInicio()">Início</div>
             <div class="col-2 opcaoMenu teste" onclick="abrirCuriosidades()">Curiosidades</div>
             <div class="col-2 opcaoMenu teste" onclick="abrirQuizzes()">Quizzes</div>
             <div class="col-4 offset-1">
